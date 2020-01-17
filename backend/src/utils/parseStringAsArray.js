@@ -1,3 +1,5 @@
 module.exports = function parseStringAsArray(arrayAsString) {
-  return arrayAsString.split(",").map(t => t.trim());
+  if(arrayAsString.length)
+    return arrayAsString.split(",").map(t => t.trim());
+  return [];
 }
